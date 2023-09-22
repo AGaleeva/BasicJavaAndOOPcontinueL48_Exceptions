@@ -15,6 +15,7 @@ public class handleException {
     }
 
     public static void getArgument(String str) {
-        if (str.length() != 16) throw new IllegalArgumentException();
+        if (str == null || str.length() != 16) throw new IllegalArgumentException();
+        System.out.println(str);
     }
 }
